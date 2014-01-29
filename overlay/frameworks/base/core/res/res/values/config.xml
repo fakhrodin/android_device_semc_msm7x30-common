@@ -20,8 +20,8 @@
 <!-- These resources are around just to allow their values to be customized
           for different hardware and product builds. -->
 <resources>
-    <!-- If this is true, the screen will fade off.
-    <bool name="config_animateScreenLights">false</bool> -->
+    <!-- If this is true, the screen will fade off. -->
+    <bool name="config_animateScreenLights">false</bool>
 
     <!-- True will enable the screen-on animation. -->
     <!--<bool name="config_screenOnAnimation">true</bool>-->
@@ -161,4 +161,17 @@
          for "perf_profile_values" array. Leave it blank if the device do not support
          performance profiles  
     <string name="config_perf_profile_default_entry" translatable="false">1</string>-->
+        <!-- Vibrator pattern for a very short but reliable vibration for soft keyboard tap -->
+    <integer-array name="config_keyboardTapVibePattern">
+        <item>30</item>
+    </integer-array>
+    
+        <!-- The attenuation in dB applied to the sound effects played
+through AudioManager.playSoundEffect() when no volume is specified. -->
+    <integer name="config_soundEffectVolumeDb">-12</integer>
+
+
+    <bool name="config_ui_enableFadingMarquee">false</bool>
+
+
 </resources>
